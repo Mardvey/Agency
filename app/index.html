@@ -1,18 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300i,400,400i,700,700i&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-  
+  <header class="header" style="background-image: url(images/content/header-bg.jpg);">
+    <div class="container">
+      <div class="header__inner">
+        <div class="header__top">
+          <div class="header__logo">
+            <a href="#">
+              <img src="images/logo/logo.png" alt="">
+            </a>
+          </div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li><a href="#">Авиабилеты</a></li>
+              <li><a href="#">Ж/д билеты</a></li>
+              <li><a href="#">Автомобильные туры</a></li>
+            </ul>
+            <ul class="menu__box">
+              <li><a href="#">Помощь</a></li>
+              <li><a href="#">Регистрация</a></li>
+            </ul>
+            <ul class="header__btn">
+              <li><a href="#">Вход</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__down">
+          <div class="header__info animated fadeInRightBig">
+            <div class="header__info-price">
+              В Норвегию за 18 980 рублей!
+            </div>
+            <div class="header__info-title">
+              Тур в деревню Рейне, Лофотенские острова!
+            </div>
+            <div class="header__info-text">
+              Край дикой природы, величественных гор,
+              глубоких фьордов, шумных птичьих колоний,
+              чистейшей воды и длинных песчаных пляжей
+            </div>
+          </div>
+          <div class="header__box animated fadeInLeftBig">
+            <form>
+              <div class="header__box-content">
+                <div class="header__line">
+                  <label>Категория</label>
+                  <select>
+                    <option><span>Авиабилеты</span></option>
+                    <option><span>Отели</span></option>
+                    <option><span>Ж.д билеты</span></option>
+                    <option><span>Автомоблильные туры</span></option>
+                  </select>
+                </div>
+                <div class="header__line">
+                  <label>Откуда</label>
+                  <input type="text" placeholder="Выбрать...">
+                </div>
+                <div class="header__line">
+                  <label>Куда</label>
+                  <input type="text" placeholder="Выбрать...">
+                </div>
+                <div class="header__line">
+                  <label>Вылет</label>
+                  <a class="header__line-popup" data-fancybox data-src="#forward" href="javascript:;">Выбрать...</a>
+                </div>
+                <div class="header__line">
+                  <label>Возвращение</label>
+                  <a class="header__line-popup" data-fancybox data-src="#return" href="javascript:;">Выбрать...</a>
+                </div>
+                <div class="header__line">
+                  <label>Колличество</label>
+                  <input type="text" placeholder="Выбрать...">
+                </div>
+                <a class="header__line-btn" href="#">
+                  <span>Найти билеты</span>
+                </a>
+
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <div id="forward">
+    <div class="forward__top">
+      <div class="forward__top-data">
+        Выбирите дату отправления
+      </div>
+      <a class="forward__top-return" href="#">
+        Обратный билет не нужен
+      </a>
+    </div>
+    <form>
+      <div class="forward__down">
+        <span>Выберите дату:</span>
+        <div class="forward__down-data">
+          <input type="date" name="calendar">
+        </div>
+        <div class="forward__down-submit">
+          <input type="submit" value="Отправить">
+        </div>
+      </div>
+    </form>
+  </div>
+
+    <div id="return">
+      <div class="return__top">
+        <div class="return__top-data">
+          Выбирите дату возвращения
+        </div>
+        <!-- <a class="forward__top-return" href="#">
+          Обратный билет не нужен
+        </a> -->
+      </div>
+      <form>
+        <div class="return__down">
+          <span>Выберите дату:</span>
+          <div class="return__down-data">
+            <input type="date" name="calendar">
+          </div>
+          <div class="return__down-submit">
+            <input type="submit" value="Отправить">
+          </div>
+        </div>
+      </form>
+    </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>

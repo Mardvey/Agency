@@ -3,5 +3,239 @@
 @import 'fonts';
 
 // start header
+.header{
+  height: 850px;
+}
+.header{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header__logo{
+  position: absolute;
+  left: 0;
+  top: -14px;
+}
+.header__inner{
+  padding-top: 30px;
+  
+}
+.header__top{
+  max-height: 49px;
+  background-color: $menu;
+  width: 100%;
+  background:rgba(38, 52, 55, 0.6);
+  position: relative;
+  &::before,&::after{
+    content: '';
+    position: absolute;
+    height: 49px;
+    background-color: $menu;
+    right: 100%;
+    width: 100%;
+    top: 0px;
+    background:rgba(38, 52, 55, 0.6);
+  }
+    &::after{
+    content: '';
+    left: 100%;
+  }
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 210px;
+
+  li{
+    display: inline-block;
+    a{
+      color: #fff;
+      @include f400;
+      line-height: 24px;
+      font-size: 18px;
+    }
+    & + li{
+      margin-left: 55px;
+    }
+  }
+}
+.header__btn{
+    padding: 6px 35px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    margin-left: 1%;
+}
+.menu__box{
+  margin-left: 18%;
+}
+.header__down{
+  position: relative;
+}
+.header__info{
+  position: absolute;
+  top: 95px;
+  left: 409px;
+  max-width: 750px;
+  height: 285px;
+  &-price{
+    font-size: 60px;
+    color: #fff;
+    margin-bottom: 11px;
+    @include f400i;
+  }
+  &-title{
+    font-size: 36px;
+    color: rgb(221, 239, 227);
+    max-width: 660px;
+    margin-bottom: 20px;
+    @include f400i;
+  }
+  &-text{
+    font-size: 30px;
+    @include f300i;
+    color: $light-blue;
+    color: rgb(221, 239, 227);
+    line-height: 1.2;
+    max-width: 555px;
+  }
+}
+.header__box{
+  max-width: 311px;
+  height: 674px;
+  border-radius: 25px;
+  background-color: $background;
+  margin-top: 44px;
+}
+.header__line{
+  height: 95px;
+  width: 100%;
+  & + .header__line{
+    border-top: 2px solid $blue;
+  }
+  input,select,a{
+    color: $title;
+    @include f400i;
+    font-size: 18px;
+    width: 85%;
+    margin-left: 22px;
+    margin-right: 22px;
+    border: none;
+    background-color: $background;
+    outline: none;
+    text{
+      color: $title;
+    }
+    &::placeholder{
+      color: $blue;
+      font-size: 18px;
+      @include f400i;
+    }
+  }
+  select{
+      color: $title;
+      font-size: 18px;
+      @include f400i;
+  }
+  label{
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 22px;
+    padding-bottom: 18px;
+    display: block;
+    font-size: 24px;
+    color: $red;
+    @include f400i;
+  }
+}
+.header__line-btn{
+  background-color: $red;
+  height: 104px;
+  width: 100%;
+  border-radius: 0px 0px 23px 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    font-size: 30px;
+    color: #fff;
+    @include f400i
+  }
+}
+.header__line{
+  a{
+    color: $blue;
+  }
+}
+// end header
+// start popup
+#forward,
+#return{
+  display: none;
+  background-color: $background;
+  max-width: 600px;
+  width: 100%;
+}
+.fancybox-content {
+    padding: 20px;
+    text-align: center;
+}
+.fancybox-slide--html .fancybox-close-small {
+  display: none;
+}
+.forward__top,
+.return__top{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $blue;
+  padding-bottom: 20px;
+  &-data, &-return{
+    font-size: 18px;
+    @include f400i;
+    color: $red;
+    padding: 10px 30px 10px;
+    margin: 0 auto;
+  }
+  &-return{
+    border: 1px solid $red;
+    border-radius: 5px;
+    transition: 1s;
+    &:hover{
+      background-color: $red;
+      border: 1px solid #fff;
+      color: #fff;
+    }
+  }
+}
+.forward__down,
+.return__down{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  &-submit{
+    input{
+      background-color: $background;
+      padding: 10px;
+      border: 2px solid $title;
+      border-radius: 9px;
+    }
+  }
+  &-data{
+    input{
+      border: none;
+      background-color: $background;
+      border: 2px solid $title;
+      padding: 10px;
+    }
+  }
+}
+// end popup
+
 
 @import 'media';
+
+
+

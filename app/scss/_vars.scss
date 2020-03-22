@@ -1,14 +1,25 @@
 // $text: #546e7a;
-// $red: #e74c3c;
-// @mixin f300 {
-//    font-family: 'Roboto', sans-serif;
-//    font-weight: 300;
-// }
-// @mixin f500 {
-//    font-family: 'Roboto', sans-serif;
-//    font-weight: 500;
-// }
-// @mixin f700 {
-//    font-family: 'Roboto', sans-serif;
-//    font-weight: 700;
-// }
+$menu: #263437;
+$red: #ce4a50;
+$title: #2a484e;
+$blue: #377375;
+$light-blue: #a8d8cd;
+$background: #ddefe3;
+
+@mixin f300i {
+   font-weight: 300;
+   font-style: italic;
+}
+@mixin f400i {
+   font-weight: 400;
+   font-style: italic;
+}
+@mixin f400 {
+   font-weight: 400;
+}
+@mixin f700 {
+   font-weight: 700;
+}
+@mixin f700i {
+   font-weight: 700;
+}
